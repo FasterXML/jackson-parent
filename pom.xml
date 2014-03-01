@@ -62,6 +62,8 @@
   </scm>
 
   <properties>
+    <version.jackson.annotations>2.4-SNAPSHOT</version.jackson.annotations>
+
     <!-- 10-Jan-2013, tatu: Jackson 2.4 and above will be Java 6
         (earlier versions Java 5)
       -->
