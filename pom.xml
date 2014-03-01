@@ -6,10 +6,10 @@
   <parent>
     <groupId>com.fasterxml</groupId>
     <artifactId>oss-parent</artifactId>
-    <version>13</version>
+    <version>16</version>
   </parent>
 
-  <groupId>com.fasterxml</groupId>
+  <groupId>com.fasterxml.jackson</groupId>
   <artifactId>jackson-parent</artifactId>
   <version>2.4-SNAPSHOT</version>
   <packaging>pom</packaging>
@@ -102,7 +102,7 @@
         <plugin>
           <groupId>com.google.code.maven-replacer-plugin</groupId>
           <artifactId>replacer</artifactId>
-          <version>${replacer.version}</version>
+          <version>${version.plugin.replacer}</version>
           <executions>
             <execution>
               <id>process-packageVersion</id>
@@ -156,7 +156,7 @@
                   <pluginExecutionFilter>
                     <groupId>com.google.code.maven-replacer-plugin</groupId>
                     <artifactId>replacer</artifactId>
-                    <versionRange>[${replacer.version},)</versionRange>
+                    <versionRange>[${version.plugin.replacer},)</versionRange>
                     <goals>
                       <goal>replace</goal>
                     </goals>
