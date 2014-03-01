@@ -63,6 +63,7 @@
 
   <properties>
     <version.jackson.annotations>2.4-SNAPSHOT</version.jackson.annotations>
+    <version.junit>4.8.2</version.junit>
 
     <!-- 10-Jan-2013, tatu: Jackson 2.4 and above will be Java 6
         (earlier versions Java 5)
@@ -83,6 +84,15 @@
     <packageVersion.template.output>${generatedSourcesDir}/${packageVersion.dir}/PackageVersion.java</packageVersion.template.output>
 
   </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${version.junit}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
 
   <build>
     <pluginManagement>
