@@ -6,7 +6,7 @@
   <parent>
     <groupId>com.fasterxml</groupId>
     <artifactId>oss-parent</artifactId>
-    <version>17</version>
+    <version>18</version>
   </parent>
 
   <groupId>com.fasterxml.jackson</groupId>
@@ -62,10 +62,10 @@
   </scm>
 
   <properties>
-    <version.jackson.annotations>2.4.0</version.jackson.annotations>
-    <!-- Some modules require 4.11
-      -->
-    <version.junit>4.11</version.junit>
+    <version.jackson.annotations>2.5.0</version.jackson.annotations>
+
+    <!-- updates to baseline plugin versions -->
+    <version.plugin.release>2.5</version.plugin.release>
 
     <!-- 10-Jan-2013, tatu: Jackson 2.4 and above will be Java 6
         (earlier versions Java 5)
@@ -76,6 +76,9 @@
          out a way to build "non-debug" variants as well
       -->
     <javac.debuglevel>lines,source,vars</javac.debuglevel>
+
+    <!-- Versions for other dependencies -->
+    <version.junit>4.11</version.junit>
 
     <!--
      | For automatically generating PackageVersion.java. Your child pom.xml must define
