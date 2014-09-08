@@ -119,8 +119,8 @@
                   <message>[ERROR] The currently supported version of Java is 1.6 or higher</message>
                 </requireJavaVersion>
                 <requireMavenVersion>
-                  <version>[3.1,)</version>
-                  <message>[ERROR] The currently supported version of Maven is 3.1 or higher</message>
+                  <version>[3.0,)</version>
+                  <message>[ERROR] The currently supported version of Maven is 3.0 or higher</message>
                 </requireMavenVersion>
                 <requirePluginVersions>
                   <banLatest>true</banLatest>
