@@ -1,0 +1,11 @@
+Project: jackson-parent
+
+The parent pom for various Jackson components.
+
+------------------------------------------------------------------------
+=== Releases ===
+------------------------------------------------------------------------
+
+2.6.0 (not yet released):
+
+- Based on FasterXML oss-parent 19, with an upgrade to Maven release plugin version.
