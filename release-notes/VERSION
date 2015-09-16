@@ -6,6 +6,10 @@ The parent pom for various Jackson components.
 === Releases ===
 ------------------------------------------------------------------------
 
+2.6.2 (15-Sep-2015)
+
+- Upgrade to oss-parent 24, to allow overriding resource inclusion for OSGi
+
 2.6.0 (10-Jul-2015)
 
 - Upgrade to oss-parent 21, with minor version updates
