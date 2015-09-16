@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
     <groupId>com.fasterxml</groupId>
     <artifactId>oss-parent</artifactId>
-    <version>23</version>
+    <version>24-SNAPSHOT</version>
   </parent>
 
   <groupId>com.fasterxml.jackson</groupId>
@@ -64,7 +63,7 @@
   <properties>
     <version.jackson.annotations>2.6.0</version.jackson.annotations>
 
-    <!-- 10-Jan-2013, tatu: Jackson 2.4 and above will be Java 6
+    <!-- 10-Jan-2013, tatu: Jackson 2.4 and above are Java 6
         (earlier versions Java 5)
       -->
     <javac.src.version>1.6</javac.src.version>
@@ -75,7 +74,7 @@
     <javac.debuglevel>lines,source,vars</javac.debuglevel>
 
     <!-- Versions for other dependencies -->
-    <version.junit>4.11</version.junit>
+    <version.junit>4.12</version.junit>
 
     <!--
      | For automatically generating PackageVersion.java. Your child pom.xml must define
@@ -104,7 +103,7 @@
         <plugin>
          <groupId>org.apache.maven.plugins</groupId>
          <artifactId>maven-enforcer-plugin</artifactId>
-         <version>1.4</version>
+         <version>1.4.1</version>
          <executions>
           <execution>
             <id>enforce-java</id>
@@ -209,7 +208,6 @@
         </plugin>
       </plugins>
     </pluginManagement>
-
   </build>
 
 </project>
