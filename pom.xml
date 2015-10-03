@@ -10,7 +10,7 @@
 
   <groupId>com.fasterxml.jackson</groupId>
   <artifactId>jackson-parent</artifactId>
-  <version>2.6.3-SNAPSHOT</version>
+  <version>2.7.0-rc1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Jackson parent poms</name>
@@ -63,11 +63,11 @@
   <properties>
     <version.jackson.annotations>2.6.0</version.jackson.annotations>
 
-    <!-- 10-Jan-2013, tatu: Jackson 2.4 and above are Java 6
-        (earlier versions Java 5)
+    <!-- 02-Oct-2015, tatu: Jackson 2.4 and above are Java 6 (earlier versions Java 5);
+          Jackson 2.7 and above Java 6 (with exception of `jackson-core`/`jackson-annotations` still Java 6)
       -->
-    <javac.src.version>1.6</javac.src.version>
-    <javac.target.version>1.6</javac.target.version>
+    <javac.src.version>1.7</javac.src.version>
+    <javac.target.version>1.7</javac.target.version>
     <!-- With 2.4+, include all debug info for the main executable; need to figure
          out a way to build "non-debug" variants as well
       -->
@@ -114,8 +114,8 @@
             <configuration>
               <rules>
                 <requireJavaVersion>
-                  <version>[1.6,)</version>
-                  <message>[ERROR] The currently supported version of Java is 1.6 or higher</message>
+                  <version>[1.7,)</version>
+                  <message>[ERROR] The currently supported version of Java is 1.7 or higher</message>
                 </requireJavaVersion>
                 <requireMavenVersion>
                   <version>[3.0,)</version>
