@@ -61,7 +61,7 @@
   </scm>
 
   <properties>
-    <version.jackson.annotations>2.6.0</version.jackson.annotations>
+    <version.jackson.annotations>2.7.0-rc1</version.jackson.annotations>
 
     <!-- 02-Oct-2015, tatu: Jackson 2.4 and above are Java 6 (earlier versions Java 5);
           Jackson 2.7 and above Java 6 (with exception of `jackson-core`/`jackson-annotations` still Java 6)
@@ -94,6 +94,16 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.fasterxml.jackson.core</groupId>
+        <artifactId>jackson-annotations</artifactId>
+        <version>${version.jackson.annotations}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
 
   <build>
     <pluginManagement>
