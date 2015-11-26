@@ -16,7 +16,6 @@
   <name>Jackson parent poms</name>
   <description>Parent pom for all Jackson components</description>
   <url>http://github.com/FasterXML/</url>
-  <inceptionYear>2014</inceptionYear>
   <organization>
     <name>FasterXML</name>
     <url>http://fasterxml.com/</url>
