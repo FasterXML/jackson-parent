@@ -6,6 +6,12 @@ The parent pom for various Jackson components.
 === Releases ===
 ------------------------------------------------------------------------
 
+2.7.0 (10-Dec-2015)
+
+- Default JDK/Java baseline now Java7
+- Specify default annotations package version (2.7.0) in dependencyManagement
+- oss-parent 25 (only change is for javadoc link)
+
 2.6.2 (15-Sep-2015)
 
 - Upgrade to oss-parent 24, to allow overriding resource inclusion for OSGi
