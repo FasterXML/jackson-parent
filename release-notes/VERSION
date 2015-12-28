@@ -6,7 +6,11 @@ The parent pom for various Jackson components.
 === Releases ===
 ------------------------------------------------------------------------
 
-2.7.0 (10-Dec-2015)
+2.7-1 (27-Dec-2015)
+
+- Allow use of `osgi.mainClass` (from `oss-parent` 26)
+
+2.7 (10-Dec-2015)
 
 - Default JDK/Java baseline now Java7
 - Specify default annotations package version (2.7.0) in dependencyManagement
