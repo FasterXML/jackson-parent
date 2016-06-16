@@ -60,7 +60,7 @@
   </scm>
 
   <properties>
-    <version.jackson.annotations>2.8.0.rc1</version.jackson.annotations>
+    <version.jackson.annotations>2.8.0.rc2</version.jackson.annotations>
 
     <!-- 02-Oct-2015, tatu: Jackson 2.4 and above are Java 6 (earlier versions Java 5);
           Jackson 2.7 and above Java 6 (with exception of `jackson-core`/`jackson-annotations` still Java 6)
