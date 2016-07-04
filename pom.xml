@@ -34,8 +34,6 @@
       <name>Tatu Saloranta</name>
       <email>tatu@fasterxml.com</email>
     </developer>
-  </developers>
-  <contributors>
     <developer>
       <id>christophercurrie</id>
       <name>Christopher Currie</name>
@@ -46,6 +44,8 @@
       <name>Paul Brown</name>
       <email>prb@fasterxml.com</email>
     </developer>
+  </developers>
+  <contributors>
     <contributor>
       <name>Simone Tripodi</name>
       <email>simonetripodi@apache.org</email>
