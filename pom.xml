@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>com.fasterxml</groupId>
+   <groupId>com.fasterxml</groupId>
     <artifactId>oss-parent</artifactId>
     <version>27</version>
   </parent>
@@ -30,6 +30,13 @@
 
   <developers>
     <developer>
+      <id>cowtowncoder</id>
+      <name>Tatu Saloranta</name>
+      <email>tatu@fasterxml.com</email>
+    </developer>
+  </developers>
+  <contributors>
+    <developer>
       <id>christophercurrie</id>
       <name>Christopher Currie</name>
       <email />
@@ -39,13 +46,6 @@
       <name>Paul Brown</name>
       <email>prb@fasterxml.com</email>
     </developer>
-    <developer>
-      <id>cowtowncoder</id>
-      <name>Tatu Saloranta</name>
-      <email>tatu@fasterxml.com</email>
-    </developer>
-  </developers>
-  <contributors>
     <contributor>
       <name>Simone Tripodi</name>
       <email>simonetripodi@apache.org</email>
