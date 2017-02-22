@@ -45,12 +45,6 @@
       <email>prb@fasterxml.com</email>
     </developer>
   </developers>
-  <contributors>
-    <contributor>
-      <name>Simone Tripodi</name>
-      <email>simonetripodi@apache.org</email>
-    </contributor>
-  </contributors>
 
   <scm>
     <connection>scm:git:git@github.com:FasterXML/jackson-parent.git</connection>
@@ -63,7 +57,7 @@
     <version.jackson.annotations>2.9.0-SNAPSHOT</version.jackson.annotations>
 
     <!-- 02-Oct-2015, tatu: Jackson 2.4 and above are Java 6 (earlier versions Java 5);
-          Jackson 2.7 and above Java 6 (with exception of `jackson-core`/`jackson-annotations` still Java 6)
+          Jackson 2.7 and above Java 7 (with exception of `jackson-core`/`jackson-annotations` still Java 6),
       -->
     <javac.src.version>1.7</javac.src.version>
     <javac.target.version>1.7</javac.target.version>
