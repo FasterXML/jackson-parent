@@ -6,11 +6,11 @@ The parent pom for various Jackson components.
 === Releases ===
 ------------------------------------------------------------------------
 
-2.9 (not yet released)
+2.9 (23-Mar-2017)
 
 - Upgrade to oss-parent 28.
 
-2.8 (01-Jul-2106)
+2.8 (01-Jul-2016)
 
 - Add `junit` version to dependencyManagement
 - Upgrade to oss-parent 27, minor plugin version updates
