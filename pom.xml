@@ -88,7 +88,9 @@
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>${version.junit}</version>
+        <!-- 06-Sep-2017, tatu: As per [#6], forcing scope here can be problematic so remove
         <scope>test</scope>
+          -->
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -101,7 +103,9 @@
         <plugin>
          <groupId>org.apache.maven.plugins</groupId>
          <artifactId>maven-enforcer-plugin</artifactId>
-         <version>1.4.1</version>
+         <!-- 06-Sep-2017, tatu: Need this version for Java 9 builds
+           -->
+         <version>3.0.0-M1</version>
          <executions>
           <execution>
             <id>enforce-java</id>
