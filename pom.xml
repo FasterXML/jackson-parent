@@ -10,7 +10,7 @@
 
   <groupId>com.fasterxml.jackson</groupId>
   <artifactId>jackson-parent</artifactId>
-  <version>2.9.1.2-SNAPSHOT</version>
+    <version>2.9.1.1</version>
   <packaging>pom</packaging>
 
   <name>Jackson parent poms</name>
@@ -54,14 +54,24 @@
   </scm>
 
   <properties>
-    <jackson.version.annotations>2.9.0</jackson.version.annotations>
+      <jackson.version.annotations>2.9.8-SNAPSHOT</jackson.version.annotations>
 
     <!-- 02-Oct-2015, tatu: Jackson 2.4 and above are Java 6 (earlier versions Java 5);
           Jackson 2.7 and above Java 7 (with exception of `jackson-core`/`jackson-annotations` still Java 6),
       -->
     <javac.src.version>1.7</javac.src.version>
     <javac.target.version>1.7</javac.target.version>
-    <javac.debuglevel>lines,source,vars</javac.debuglevel>
+
+      <!-- TODO Remove JDK 11 Settings -->
+      <javac.src.version>1.11</javac.src.version>
+      <javac.target.version>1.11</javac.target.version>
+
+      <jdk.version>1.11</jdk.version>
+      <maven.compiler.source>1.11</maven.compiler.source>
+      <maven.compiler.target>1.11</maven.compiler.target>
+      <maven.compiler.release>11</maven.compiler.release>
+
+      <javac.debuglevel>lines,source,vars</javac.debuglevel>
 
     <!-- Versions for other dependencies -->
     <version.junit>4.12</version.junit>
@@ -208,8 +218,42 @@
             </lifecycleMappingMetadata>
           </configuration>
         </plugin>
+
+          <plugin>
+              <!-- In the future, rather than using ModiTect to compile module-info.java,
+                  could use two execute rules: https://maven.apache.org/plugins/maven-compiler-plugin/examples/module-info.html -->
+              <groupId>org.moditect</groupId>
+              <artifactId>moditect-maven-plugin</artifactId>
+              <version>1.0.0.Beta1</version>
+              <executions>
+                  <execution>
+                      <id>add-module-infos</id>
+                      <phase>package</phase>
+                      <goals>
+                          <goal>add-module-info</goal>
+                      </goals>
+                      <configuration>
+                          <overwriteExistingFiles>true</overwriteExistingFiles>
+                          <module>
+                              <moduleInfoFile>
+                                  src/moditect/module-info.java
+                              </moduleInfoFile>
+                          </module>
+                      </configuration>
+                  </execution>
+              </executions>
+          </plugin>
+
       </plugins>
     </pluginManagement>
   </build>
 
+    <profiles>
+        <profile>
+            <id>JPMS</id>
+            <activation>
+                <jdk>1.11</jdk>
+            </activation>
+        </profile>
+    </profiles>
 </project>
