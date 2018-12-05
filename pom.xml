@@ -4,7 +4,7 @@
   <parent>
    <groupId>com.fasterxml</groupId>
     <artifactId>oss-parent</artifactId>
-    <version>33</version>
+    <version>34-SNAPSHOT</version>
   </parent>
 
   <groupId>com.fasterxml.jackson</groupId>
@@ -46,7 +46,7 @@
     <!-- 09-Sep-2017, tatu: Jackson 3.x is Java 8 and above only. While it would be possible
          to support earlier versions for some components (annotations, core streaming),
          this is one simplification we can do
-      -->
+    -->
     <javac.src.version>1.8</javac.src.version>
     <javac.target.version>1.8</javac.target.version>
     <javac.debuglevel>lines,source,vars</javac.debuglevel>

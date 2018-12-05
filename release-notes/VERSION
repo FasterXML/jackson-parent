@@ -8,7 +8,11 @@ The parent pom for various Jackson components.
 
 3.0 (not yet released)
 
-2.9.1 (not yet released)
+2.9.1.1 (29-Mar-2018)
+
+- Upgrade to oss-parent 33 to get later plugin versions
+
+2.9.1 (01-Sep-2017)
 
 - Minor changes needed for Java 9 builds (by projects that use this parent)
     * mostly upgrades to plug-ins, versions `3.0.0.M1`
