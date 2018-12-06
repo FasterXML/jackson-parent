@@ -5,7 +5,7 @@
   <parent>
    <groupId>com.fasterxml</groupId>
     <artifactId>oss-parent</artifactId>
-    <version>33</version>
+    <version>35-SNAPSHOT</version>
   </parent>
 
   <groupId>com.fasterxml.jackson</groupId>
@@ -76,8 +76,10 @@
      | packageVersion.dir and packageVersion.package, and must set the phase of the
      | process-packageVersion execution of maven-replacer-plugin to 'generate-sources'.
     -->
-    <packageVersion.template.input>${basedir}/src/main/java/${packageVersion.dir}/PackageVersion.java.in</packageVersion.template.input>
-    <packageVersion.template.output>${generatedSourcesDir}/${packageVersion.dir}/PackageVersion.java</packageVersion.template.output>
+    <!--suppress UnresolvedMavenProperty -->
+      <packageVersion.template.input>${basedir}/src/main/java/${packageVersion.dir}/PackageVersion.java.in</packageVersion.template.input>
+    <!--suppress UnresolvedMavenProperty -->
+      <packageVersion.template.output>${generatedSourcesDir}/${packageVersion.dir}/PackageVersion.java</packageVersion.template.output>
 
   </properties>
 
@@ -101,22 +103,6 @@
   </dependencyManagement>
 
   <build>
-
-	<plugins>
-		 <plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-compiler-plugin</artifactId>
-			<version>3.8.0</version>
-			<dependencies>
-				<dependency>
-					<groupId>org.ow2.asm</groupId>
-					<artifactId>asm</artifactId>
-					<version>7.0</version>
-				</dependency>
-			</dependencies>
-		</plugin>
-	</plugins>
-  
     <pluginManagement>
       <plugins>
 
@@ -184,18 +170,23 @@
             <outputFile>${packageVersion.template.output}</outputFile>
             <replacements>
               <replacement>
-                <token>@package@</token>
+                <!--suppress UnresolvedMavenProperty -->
+                  <token>@package@</token>
+                  <!--suppress UnresolvedMavenProperty -->
                 <value>${packageVersion.package}</value>
               </replacement>
               <replacement>
+                  <!--suppress UnresolvedMavenProperty -->
                 <token>@projectversion@</token>
                 <value>${project.version}</value>
               </replacement>
               <replacement>
+                  <!--suppress UnresolvedMavenProperty -->
                 <token>@projectgroupid@</token>
                 <value>${project.groupId}</value>
               </replacement>
               <replacement>
+                  <!--suppress UnresolvedMavenProperty -->
                 <token>@projectartifactid@</token>
                 <value>${project.artifactId}</value>
               </replacement>
@@ -313,11 +304,7 @@
                                 <version>7.0</version>
                             </dependency>
                         </dependencies>
-                        <configuration>
-                            <release>1.11</release>
-                        </configuration>
                     </plugin>
-
                 </plugins>
             </build>
         </profile>
