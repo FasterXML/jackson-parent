@@ -74,6 +74,8 @@
     <packageVersion.template.input>${basedir}/src/main/java/${packageVersion.dir}/PackageVersion.java.in</packageVersion.template.input>
     <packageVersion.template.output>${generatedSourcesDir}/${packageVersion.dir}/PackageVersion.java</packageVersion.template.output>
 
+    <!-- temporary plugin version overrides (until parent pom built) -->
+    <version.plugin.shade>3.2.1</version.plugin.shade> <!-- until v35 of oss-parent -->
   </properties>
 
   <dependencyManagement>
