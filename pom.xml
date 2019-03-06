@@ -51,8 +51,8 @@
     <javac.target.version>1.8</javac.target.version>
     <javac.debuglevel>lines,source,vars</javac.debuglevel>
 
-    <!-- temporary plugin version overrides (until parent pom built) -->
-    <version.plugin.shade>3.2.1</version.plugin.shade> <!-- until v35 of oss-parent -->
+    <maven.compiler.source>${javac.src.version}</maven.compiler.source>
+    <maven.compiler.target>${javac.target.version}</maven.compiler.target>
   </properties>
 
   <!-- Alas, need to include snapshot reference since otherwise can not find
