@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
+  <!-- 22-Mar-2019, tatu: Since 3.0, this has become very thin layer, so most version
+         baselines defined in `oss-parent`, but since this is used as base for both
+         Jackson components AND jackson-bom, can't have too much additional stuff
+         (to avoid leaking defaults via `jackson-bom`). Instead, most things being
+         moved to `jackson-base`, child of `jackson-bom`, and something that all
+         Jackson components extend.
+    -->
+
   <parent>
    <groupId>com.fasterxml</groupId>
     <artifactId>oss-parent</artifactId>
