@@ -3,6 +3,7 @@ language: java
 # Jackson 3.x is java 8 only so:
 jdk:
   - openjdk8
+  - openjdk11
 
 # Below this line is configuration for deploying to the Sonatype OSS repo
 # https://knowm.org/configure-travis-ci-to-deploy-snapshots/
@@ -13,7 +14,7 @@ after_success: "mvn deploy --settings target/travis/settings.xml"
 branches:
   only:
     - master
-    - "2.10"
+    - "3.0"
 
 env:
   global:
