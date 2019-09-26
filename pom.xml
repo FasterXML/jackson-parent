@@ -10,7 +10,7 @@
 
   <groupId>com.fasterxml.jackson</groupId>
   <artifactId>jackson-parent</artifactId>
-  <version>2.10-SNAPSHOT</version>
+  <version>2.10</version>
   <packaging>pom</packaging>
 
   <name>Jackson parent poms</name>
@@ -50,7 +50,7 @@
     <connection>scm:git:git@github.com:FasterXML/jackson-parent.git</connection>
     <developerConnection>scm:git:git@github.com:FasterXML/jackson-parent.git</developerConnection>
     <url>http://github.com/FasterXML/jackson-parent</url>
-    <tag>HEAD</tag>
+    <tag>jackson-parent-2.10</tag>
   </scm>
 
   <properties>
