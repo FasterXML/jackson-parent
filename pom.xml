@@ -54,8 +54,6 @@
   </scm>
 
   <properties>
-    <jackson.version.annotations>2.10.0</jackson.version.annotations>
-
     <!-- 02-Oct-2015, tatu: Jackson 2.4 and above are Java 6 (earlier versions Java 5);
           Jackson 2.7 and above Java 7 (with exception of `jackson-core`/`jackson-annotations` still Java 6),
       -->
@@ -74,13 +72,7 @@
 
   <dependencyManagement>
     <dependencies>
-      <dependency>
-        <groupId>com.fasterxml.jackson.core</groupId>
-        <artifactId>jackson-annotations</artifactId>
-        <version>${jackson.version.annotations}</version>
-      </dependency>
-
-      <dependency>
+       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
         <version>${version.junit}</version>
@@ -120,13 +112,9 @@
             </goals>
             <configuration>
               <rules>
-                <requireJavaVersion>
-                  <version>[1.7,)</version>
-                  <message>[ERROR] The currently supported version of Java is 1.7 or higher</message>
-                </requireJavaVersion>
-                <requireMavenVersion>
-                  <version>[3.0,)</version>
-                  <message>[ERROR] The currently supported version of Maven is 3.0 or higher</message>
+                 <requireMavenVersion>
+                  <version>[3.3,)</version>
+                  <message>[ERROR] The currently supported version of Maven is 3.3 or higher</message>
                 </requireMavenVersion>
                 <requirePluginVersions>
                   <banLatest>true</banLatest>
