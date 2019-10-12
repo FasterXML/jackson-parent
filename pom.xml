@@ -2,12 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <!-- 22-Mar-2019, tatu: Since 3.0, this has become very thin layer, so most version
-         baselines defined in `oss-parent`, but since this is used as base for both
-         Jackson components AND jackson-bom, can't have too much additional stuff
-         (to avoid leaking defaults via `jackson-bom`). Instead, most things being
-         moved to `jackson-base`, child of `jackson-bom`, and something that all
-         Jackson components extend.
+  <!-- 22-Mar-2019, tatu: Since 3.0, this pom is no longer used by Jackson; instead
+        `jackson-bom` extends FasterXML `oss-parent` directly; and all actual Jackson
+        components extend `jackson-base` (that has has `jackson-bom` as parent)
+
+        So below is not really... useful or used, and no 3.x releases should be made.
     -->
 
   <parent>
@@ -22,7 +21,7 @@
   <packaging>pom</packaging>
 
   <name>Jackson parent poms</name>
-  <description>Public parent pom for all Jackson components</description>
+  <description>Public parent pom for all Jackson components (DEPRECATED)</description>
   <url>http://github.com/FasterXML/</url>
   <organization>
     <name>FasterXML</name>
@@ -75,15 +74,5 @@
       <snapshots><enabled>true</enabled></snapshots>
     </repository>
   </repositories>
-
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>${version.junit}</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
 
 </project>
