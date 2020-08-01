@@ -6,6 +6,10 @@ The parent pom for various Jackson components.
 === Releases ===
 ------------------------------------------------------------------------
 
+2.12.0 (not yet released)
+
+- Upgrade to oss-parent 40 (plug-in versions left, not much more)
+
 2.11.0 (20-Mar-2020)
 
 - Remove `jackson-annotations` baseline dependency, version
