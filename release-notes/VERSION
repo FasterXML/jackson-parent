@@ -6,7 +6,11 @@ The parent pom for various Jackson components.
 === Releases ===
 ------------------------------------------------------------------------
 
-2.12.0 (not yet released)
+2.13.0 (not yet released)
+
+- JDK baseline now JDK 8
+
+2.12.0 (29-Nov-2020)
 
 - Upgrade to oss-parent 41 (plug-in versions left, not much more)
 

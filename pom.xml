@@ -46,9 +46,11 @@
   <properties>
     <!-- 02-Oct-2015, tatu: Jackson 2.4 and above are Java 6 (earlier versions Java 5);
           Jackson 2.7 and above Java 7 (with exception of `jackson-core`/`jackson-annotations` still Java 6),
-      -->
-    <javac.src.version>1.7</javac.src.version>
-    <javac.target.version>1.7</javac.target.version>
+    -->
+    <!-- 09-Jan-2021, tatu: Jackson 2.13 finally raises baseline to Java 8, with continuing
+       exception fo `jackson-core`/`jackson-annotations` as Java 6 -->
+    <javac.src.version>1.8</javac.src.version>
+    <javac.target.version>1.8</javac.target.version>
     <javac.debuglevel>lines,source,vars</javac.debuglevel>
 
     <!--
@@ -103,8 +105,8 @@
             <configuration>
               <rules>
                  <requireMavenVersion>
-                  <version>[3.3,)</version>
-                  <message>[ERROR] The currently supported version of Maven is 3.3 or higher</message>
+                  <version>[3.6,)</version>
+                  <message>[ERROR] The currently supported version of Maven is 3.6 or higher</message>
                 </requireMavenVersion>
                 <requirePluginVersions>
                   <banLatest>true</banLatest>
