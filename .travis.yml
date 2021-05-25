@@ -11,7 +11,7 @@ after_success: "mvn deploy --settings target/travis/settings.xml"
 branches:
   only:
     - master
-    - "2.12"
+    - "2.13"
 
 env:
   global:
