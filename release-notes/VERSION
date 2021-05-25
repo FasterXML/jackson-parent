@@ -9,6 +9,7 @@ The parent pom for various Jackson components.
 2.13.0 (not yet released)
 
 - JDK baseline now JDK 8
+- Upgrade to oss-parent 42 (jacoco plugin version mostly)
 
 2.12.0 (29-Nov-2020)
 
