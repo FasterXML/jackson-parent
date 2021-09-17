@@ -10,6 +10,8 @@ The parent pom for various Jackson components.
 
 - JDK baseline now JDK 8
 - Upgrade to oss-parent 43 (jacoco, javadoc plugin versions)
+- Remove managed junit version (due to [jackson-bom#43]), promoted higher
+  up on parent pom stack (to "jackson-base")
 
 2.12.0 (29-Nov-2020)
 

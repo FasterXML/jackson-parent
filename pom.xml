@@ -62,18 +62,9 @@
     <packageVersion.template.output>${generatedSourcesDir}/${packageVersion.dir}/PackageVersion.java</packageVersion.template.output>
   </properties>
 
-  <dependencyManagement>
-    <dependencies>
-       <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>${version.junit}</version>
-        <!-- 06-Sep-2017, tatu: As per [#6], forcing scope here can be problematic so remove
-        <scope>test</scope>
-          -->
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
+  <!-- 17-Sep-2021, tatu: Used to have junit prior to Jackson 2.13, removed due to
+      [jackson-bom#43] issue
+    -->
 
   <!-- Alas, need to include snapshot reference since otherwise can not find
        snapshot of parent... -->
