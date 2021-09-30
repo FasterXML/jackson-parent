@@ -6,7 +6,7 @@ The parent pom for various Jackson components.
 === Releases ===
 ------------------------------------------------------------------------
 
-2.13.0 (not yet released)
+2.13.0 (30-Sep-2021)
 
 - JDK baseline now JDK 8
 - Upgrade to oss-parent 43 (jacoco, javadoc plugin versions)
