@@ -6,22 +6,26 @@ The parent pom for various Jackson components.
 === Releases ===
 ------------------------------------------------------------------------
 
-2.13.0 (30-Sep-2021)
+2.14 (not yet released)
+
+- No changes since 2.13
+
+2.13 (30-Sep-2021)
 
 - JDK baseline now JDK 8
 - Upgrade to oss-parent 43 (jacoco, javadoc plugin versions)
 - Remove managed junit version (due to [jackson-bom#43]), promoted higher
   up on parent pom stack (to "jackson-base")
 
-2.12.0 (29-Nov-2020)
+2.12 (29-Nov-2020)
 
 - Upgrade to oss-parent 41 (plug-in versions left, not much more)
 
-2.11.0 (20-Mar-2020)
+2.11 (20-Mar-2020)
 
 - Remove `jackson-annotations` baseline dependency, version
 
-2.10.0 (26-Sep-2019)
+2.10 (26-Sep-2019)
 
 - Upgrade to oss-parent 38
 
