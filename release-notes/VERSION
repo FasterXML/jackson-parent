@@ -8,7 +8,7 @@ The parent pom for various Jackson components.
 
 2.14 (not yet released)
 
-- Upgrade to oss-parent 44 (wrapper plugin version)
+- Upgrade to oss-parent 45 (wrapper plugin version)
 
 2.13 (30-Sep-2021)
 
