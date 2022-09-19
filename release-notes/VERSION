@@ -6,4 +6,70 @@ The parent pom for various Jackson components.
 === Releases ===
 ------------------------------------------------------------------------
 
+<<<<<<< HEAD
 3.0 (not yet released)
+=======
+2.14 (not yet released)
+
+- Upgrade to oss-parent 46 (Reproducible Builds, many plugin version updates)
+
+2.13 (30-Sep-2021)
+
+- JDK baseline now JDK 8
+- Upgrade to oss-parent 43 (jacoco, javadoc plugin versions)
+- Remove managed junit version (due to [jackson-bom#43]), promoted higher
+  up on parent pom stack (to "jackson-base")
+
+2.12 (29-Nov-2020)
+
+- Upgrade to oss-parent 41 (plug-in versions left, not much more)
+
+2.11 (20-Mar-2020)
+
+- Remove `jackson-annotations` baseline dependency, version
+
+2.10 (26-Sep-2019)
+
+- Upgrade to oss-parent 38
+
+2.9.1.1 (29-Mar-2018)
+
+- Upgrade to oss-parent 33 to get later plugin versions
+
+2.9.1 (01-Sep-2017)
+
+- Minor changes needed for Java 9 builds (by projects that use this parent)
+    * mostly upgrades to plug-ins, versions `3.0.0.M1`
+
+2.9 (23-Mar-2017)
+
+- Upgrade to oss-parent 28.
+
+2.8 (01-Jul-2016)
+
+- Add `junit` version to dependencyManagement
+- Upgrade to oss-parent 27, minor plugin version updates
+
+2.7-1 (27-Dec-2015)
+
+- Allow use of `osgi.mainClass` (from `oss-parent` 26)
+
+2.7 (10-Dec-2015)
+
+- Default JDK/Java baseline now Java7
+- Specify default annotations package version (2.7.0) in dependencyManagement
+- oss-parent 25 (only change is for javadoc link)
+
+2.6.2 (15-Sep-2015)
+
+- Upgrade to oss-parent 24, to allow overriding resource inclusion for OSGi
+
+2.6.0 (10-Jul-2015)
+
+- Upgrade to oss-parent 21, with minor version updates
+
+2.5.1 (24-Apr-2015)
+
+- Based on FasterXML oss-parent 19, with an upgrade to Maven release plugin version 
+ (to 2.5.1)
+>>>>>>> 2.14
