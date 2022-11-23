@@ -5,7 +5,7 @@
   <parent>
    <groupId>com.fasterxml</groupId>
     <artifactId>oss-parent</artifactId>
-    <version>48</version>
+    <version>49</version>
   </parent>
 
   <groupId>com.fasterxml.jackson</groupId>
@@ -160,33 +160,6 @@
                 <value>${project.artifactId}</value>
               </replacement>
             </replacements>
-          </configuration>
-        </plugin>
-        <plugin>
-          <!-- Work around Eclipse incompatibility (http://code.google.com/p/maven-replacer-plugin/issues/detail?id=66) -->
-          <groupId>org.eclipse.m2e</groupId>
-          <artifactId>lifecycle-mapping</artifactId>
-          <version>1.0.0</version>
-          <configuration>
-            <lifecycleMappingMetadata>
-              <pluginExecutions>
-                <pluginExecution>
-                  <pluginExecutionFilter>
-                    <groupId>com.google.code.maven-replacer-plugin</groupId>
-                    <artifactId>replacer</artifactId>
-                    <versionRange>[${version.plugin.replacer},)</versionRange>
-                    <goals>
-                      <goal>replace</goal>
-                    </goals>
-                  </pluginExecutionFilter>
-                  <action>
-                    <execute>
-                      <runOnIncremental>false</runOnIncremental>
-                    </execute>
-                  </action>
-                </pluginExecution>
-              </pluginExecutions>
-            </lifecycleMappingMetadata>
           </configuration>
         </plugin>
       </plugins>
