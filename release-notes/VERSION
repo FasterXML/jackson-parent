@@ -8,7 +8,7 @@ The parent pom for various Jackson components.
 
 3.0 (not yet released)
 
-2.15 (not yet released)
+2.15-rc (18-Mar-2023)
 
 - Upgrade to oss-parent 50 (many plugin version updates)
 - Remove settings for `org.eclipse.m2e:lifecycle-mapping`
