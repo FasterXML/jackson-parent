@@ -6,6 +6,10 @@ The parent pom for various Jackson components.
 === Releases ===
 ------------------------------------------------------------------------
 
+Unreleased from 2.15
+
+- Upgrade to oss-parent 51 (many plugin version updates, specifically moditect)
+
 2.15 (23-Apr-2023)
 
 - Upgrade to oss-parent 50 (many plugin version updates)
