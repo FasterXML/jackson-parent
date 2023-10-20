@@ -8,9 +8,9 @@ The parent pom for various Jackson components.
 
 3.0 (not yet released)
 
-2.16 (not yet released)
+2.16-rc1 (20-Oct-2023)
 
-- Upgrade to oss-parent 53 (tons of plugin updates to resolve Maven warnings)
+- Upgrade to oss-parent 55 (tons of plugin updates to resolve Maven warnings)
 
 2.15 (23-Apr-2023)
 
