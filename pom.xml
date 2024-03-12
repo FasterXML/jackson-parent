@@ -65,11 +65,7 @@
     <maven.compiler.source>${javac.src.version}</maven.compiler.source>
     <maven.compiler.target>${javac.target.version}</maven.compiler.target>
 
-<<<<<<< HEAD
     <project.build.outputTimestamp>2023-03-18T19:46:34Z</project.build.outputTimestamp>
-=======
-    <project.build.outputTimestamp>2024-02-27T00:41:47Z</project.build.outputTimestamp>
->>>>>>> 2.17
   </properties>
 
   <!-- Alas, need to include snapshot reference since otherwise can not find
