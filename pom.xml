@@ -10,7 +10,7 @@
 
   <groupId>com.fasterxml.jackson</groupId>
   <artifactId>jackson-parent</artifactId>
-  <version>2.18.1-SNAPSHOT</version>
+  <version>2.19-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Jackson parent poms</name>
