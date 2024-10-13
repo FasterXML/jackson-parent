@@ -56,6 +56,10 @@
     
     <javac.debuglevel>lines,source,vars</javac.debuglevel>
 
+    <!-- 12-Oct-2024, tatu: [jackson-parent#15] Downgrade Moditect plugin for 2.18.1+
+      -->
+    <version.plugin.moditect>1.1.0</version.plugin.moditect>
+
     <!--
      | For automatically generating PackageVersion.java. Your child pom.xml must define
      | packageVersion.dir and packageVersion.package, and must set the phase of the
