@@ -51,12 +51,9 @@
   </scm>
 
   <properties>
-    <!-- 09-Sep-2017, tatu: Jackson 3.x is Java 8 and above only. While it would be possible
-         to support earlier versions for some components (annotations, core streaming),
-         this is one simplification we can do
-    -->
-    <javac.src.version>1.8</javac.src.version>
-    <javac.target.version>1.8</javac.target.version>
+    <!-- Just updated here for documentation; Jackson 3.0 will move past Java 8 -->
+    <javac.src.version>17</javac.src.version>
+    <javac.target.version>17</javac.target.version>
     <maven.compiler.source>${javac.src.version}</maven.compiler.source>
     <maven.compiler.target>${javac.target.version}</maven.compiler.target>
 
