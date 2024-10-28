@@ -10,7 +10,7 @@ The parent pom for various Jackson components.
 
 No changes since 2.18
 
-2.18.1 (not yet released)
+2.18.1 (28-Oct-2024)
 
 #15: Add override to downgrade `moditect-maven-plugin` from 1.2.2 to 1.1.0
  to work around Eclipse issues

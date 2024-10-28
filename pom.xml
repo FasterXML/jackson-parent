@@ -68,7 +68,7 @@
     <packageVersion.template.input>${basedir}/src/main/java/${packageVersion.dir}/PackageVersion.java.in</packageVersion.template.input>
     <packageVersion.template.output>${generatedSourcesDir}/${packageVersion.dir}/PackageVersion.java</packageVersion.template.output>
 
-    <project.build.outputTimestamp>2024-09-27T01:15:49Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2024-10-28T22:52:46Z</project.build.outputTimestamp>
   </properties>
 
   <!-- 17-Sep-2021, tatu: Used to have junit prior to Jackson 2.13, removed due to
