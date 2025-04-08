@@ -6,7 +6,7 @@ The parent pom for various Jackson components.
 === Releases ===
 ------------------------------------------------------------------------
 
-2.19 (not yet released)
+2.19-rc2 (07-Apr-2025)
 
 - Update to oss-parent 64 (plugin version updates)
 
