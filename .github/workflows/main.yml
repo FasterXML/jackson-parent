@@ -3,16 +3,16 @@ on:
   push:
     branches:
     - 3.x
-    - "2.19"
+    - 2.x
     paths-ignore:
     - "README.md"
 jobs:
   build:
-    runs-on: 'ubuntu-22.04'
+    runs-on: 'ubuntu-24.04'
     strategy:
       fail-fast: false
       matrix:
-        java_version: ['8', '11', '17', '21']
+        java_version: ['8', '17', '21']
     env:
       JAVA_OPTS: "-XX:+TieredCompilation -XX:TieredStopAtLevel=1"
     steps:
@@ -29,9 +29,9 @@ jobs:
       run: ./mvnw -V -B -ff -ntp verify
     - name: Extract project Maven version
       id: projectVersion
-      run: echo "version=$(./mvnw org.apache.maven.plugins:maven-help-plugin:3.3.0:evaluate -DforceStdout -Dexpression=project.version -q)" >> $GITHUB_OUTPUT
+      run: echo "version=$(./mvnw org.apache.maven.plugins:maven-help-plugin:3.5.1:evaluate -DforceStdout -Dexpression=project.version -q)" >> $GITHUB_OUTPUT
     - name: Deploy snapshot
-      if: github.event_name != 'pull_request' && matrix.java_version == '8' && endsWith(steps.projectVersion.outputs.version, '-SNAPSHOT')
+      if: ${{ github.event_name != 'pull_request' && matrix.java_version == '8' && endsWith(steps.projectVersion.outputs.version, '-SNAPSHOT') }}
       env:
         CI_DEPLOY_USERNAME: ${{ secrets.CI_DEPLOY_USERNAME }}
         CI_DEPLOY_PASSWORD: ${{ secrets.CI_DEPLOY_PASSWORD }}
