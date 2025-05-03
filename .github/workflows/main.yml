@@ -1,13 +1,11 @@
 name: Build and Deploy Snapshot
 on:
   push:
-    branches:
-    - 3.x
     paths-ignore:
     - "README.md"
 jobs:
   build:
-    runs-on: 'ubuntu-24.04'
+    runs-on: 'ubuntu-latest'
     strategy:
       fail-fast: false
       matrix:
