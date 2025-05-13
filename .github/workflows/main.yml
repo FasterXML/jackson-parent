@@ -20,8 +20,8 @@ jobs:
         distribution: 'temurin'
         java-version: ${{ matrix.java_version }}
         server-id: sonatype-nexus-snapshots
-        server-username: CENTRAL_DEPLOY_USERNAME
-        server-password: CENTRAL_DEPLOY_PASSWORD
+        server-username: CI_DEPLOY_USERNAME
+        server-password: CI_DEPLOY_PASSWORD
     - name: Build
       run: ./mvnw -V -B -ff -ntp verify
     - name: Extract project Maven version
@@ -30,7 +30,7 @@ jobs:
     - name: Deploy snapshot
       if: ${{ github.event_name != 'pull_request' && matrix.java_version == '17' && endsWith(steps.projectVersion.outputs.version, '-SNAPSHOT') }}
       env:
-        CENTRAL_DEPLOY_USERNAME: ${{ secrets.CENTRAL_DEPLOY_USERNAME }}
-        CENTRAL_DEPLOY_PASSWORD: ${{ secrets.CENTRAL_DEPLOY_PASSWORD }}
+        CI_DEPLOY_USERNAME: ${{ secrets.CENTRAL_DEPLOY_USERNAME }}
+        CI_DEPLOY_PASSWORD: ${{ secrets.CENTRAL_DEPLOY_PASSWORD }}
         # MAVEN_GPG_PASSPHRASE: ${{ secrets.MAVEN_GPG_PASSPHRASE }}
       run: ./mvnw -B -q -ff -DskipTests -ntp source:jar deploy
