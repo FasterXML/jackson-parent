@@ -22,6 +22,21 @@
   <version>3.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
+  <!-- 13-May-2025, tatu: Needed for new Central Portal publishing -->
+  <distributionManagement>
+    <snapshotRepository>
+      <id>central-snapshots</id>
+      <name>Sonatype Central Portal Repository</name>
+      <url>https://central.sonatype.com/api/v1/publisher</url>
+    </snapshotRepository>
+    <repository>
+      <id>central</id>
+      <name>Sonatype Central Portal Repository</name>
+      <url>https://central.sonatype.com/api/v1/publisher</url>
+    </repository>
+  </distributionManagement>
+
+  
   <name>Jackson parent poms</name>
   <description>Public parent pom for all Jackson components (DEPRECATED)</description>
   <url>http://github.com/FasterXML/</url>
