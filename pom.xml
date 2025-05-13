@@ -86,7 +86,7 @@
        snapshot of parent... -->
   <repositories>
     <repository> <!-- New Sonatype Central Portal (2025/5+) snapshots -->
-      <id>centrak-snapshots</id>
+      <id>central-snapshots</id>
       <name>Sonatype Central Portal (snapshots)</name>
       <url>https://central.sonatype.com/repository/maven-snapshots</url>
       <releases><enabled>false</enabled></releases>
