@@ -110,6 +110,7 @@
           <artifactId>central-publishing-maven-plugin</artifactId>
           <extensions>true</extensions>
           <configuration>
+	    <deploymentName>Deployment-${project.artifactId}</deploymentName>
             <publishingServerId>central</publishingServerId>
           </configuration>
         </plugin>
