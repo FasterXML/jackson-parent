@@ -93,14 +93,6 @@
       <releases><enabled>false</enabled></releases>
       <snapshots><enabled>true</enabled></snapshots>
     </repository>
-    <!-- 13-May-2025, tatu: soon moving to Central Portal, will need this -->
-    <repository>
-      <id>central-snapshots</id>
-      <name>Sonatype Central Portal (snapshots)</name>
-      <url>https://central.sonatype.com/repository/maven-snapshots</url>
-      <releases><enabled>false</enabled></releases>
-      <snapshots><enabled>true</enabled></snapshots>
-    </repository>
   </repositories>
 
   <build>
