@@ -19,7 +19,7 @@
 
   <groupId>tools.jackson</groupId>
   <artifactId>jackson-parent</artifactId>
-  <version>3.0.0-test2-SNAPSHOT</version>
+  <version>3.0.0-test2</version>
   <packaging>pom</packaging>
 
   <!-- 13-May-2025, tatu: Needed for new Central Portal publishing -->
@@ -64,7 +64,7 @@
     <connection>scm:git:git@github.com:FasterXML/jackson-parent.git</connection>
     <developerConnection>scm:git:git@github.com:FasterXML/jackson-parent.git</developerConnection>
     <url>http://github.com/FasterXML/jackson-parent</url>
-    <tag>HEAD</tag>
+    <tag>jackson-parent-3.0.0-test2</tag>
   </scm>
 
   <properties>
@@ -79,7 +79,7 @@
     <maven.compiler.source>${javac.src.version}</maven.compiler.source>
     <maven.compiler.target>${javac.target.version}</maven.compiler.target>
 
-    <project.build.outputTimestamp>2025-05-13T21:17:43Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2025-05-14T01:24:03Z</project.build.outputTimestamp>
   </properties>
 
   <!-- Alas, need to include snapshot reference since otherwise can not find
