@@ -5,7 +5,7 @@
   <parent>
    <groupId>com.fasterxml</groupId>
     <artifactId>oss-parent</artifactId>
-    <version>67</version>
+    <version>68</version>
   </parent>
 
   <groupId>com.fasterxml.jackson</groupId>
@@ -68,7 +68,7 @@
     <packageVersion.template.input>${basedir}/src/main/java/${packageVersion.dir}/PackageVersion.java.in</packageVersion.template.input>
     <packageVersion.template.output>${generatedSourcesDir}/${packageVersion.dir}/PackageVersion.java</packageVersion.template.output>
 
-    <project.build.outputTimestamp>2025-05-14T04:04:23Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2025-05-27T03:20:07Z</project.build.outputTimestamp>
   </properties>
 
   <!-- 17-Sep-2021, tatu: Used to have junit prior to Jackson 2.13, removed due to
@@ -78,6 +78,10 @@
   <!-- Alas, need to include snapshot reference since otherwise can not find
        snapshot of parent... -->
   <repositories>
+    <!-- 26-May-2025, tatu: No longer need after switch to Sonatype Central Portal
+	remove soon:
+      -->
+    <!--
     <repository>
       <id>sonatype-nexus-snapshots</id>
       <name>Sonatype Nexus Snapshots</name>
@@ -85,7 +89,8 @@
       <releases><enabled>false</enabled></releases>
       <snapshots><enabled>true</enabled></snapshots>
     </repository>
-    <!-- 13-May-2025, tatu: soon moving to Central Portal, will need this -->
+    -->
+    <!-- 26-May-2025, tatu: Using Sonatype Central Portal, will need this -->
     <repository>
       <id>central-snapshots</id>
       <name>Sonatype Central Portal (snapshots)</name>
