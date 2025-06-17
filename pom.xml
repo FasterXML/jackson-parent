@@ -77,18 +77,6 @@
   <!-- Alas, need to include snapshot reference since otherwise can not find
        snapshot of parent... -->
   <repositories>
-    <!-- 26-May-2025, tatu: No longer need after switch to Sonatype Central Portal
-	remove soon:
-      -->
-    <!--
-    <repository>
-      <id>sonatype-nexus-snapshots</id>
-      <name>Sonatype Nexus Snapshots</name>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-      <releases><enabled>false</enabled></releases>
-      <snapshots><enabled>true</enabled></snapshots>
-    </repository>
-    -->
     <!-- 26-May-2025, tatu: Using Sonatype Central Portal, will need this -->
     <repository>
       <id>central-snapshots</id>
