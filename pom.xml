@@ -14,7 +14,7 @@
   <parent>
    <groupId>com.fasterxml</groupId>
     <artifactId>oss-parent</artifactId>
-    <version>68</version>
+    <version>69</version>
   </parent>
 
   <groupId>tools.jackson</groupId>
@@ -85,7 +85,11 @@
   <!-- Alas, need to include snapshot reference since otherwise can not find
        snapshot of parent... -->
   <repositories>
+<<<<<<< HEAD
     <!-- New Sonatype Central Portal (2025/5+) snapshots -->
+=======
+    <!-- 26-May-2025, tatu: Using Sonatype Central Portal, will need this -->
+>>>>>>> 2.x
     <repository>
       <id>central-snapshots</id>
       <name>Sonatype Central Portal (snapshots)</name>
