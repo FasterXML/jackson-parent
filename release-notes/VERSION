@@ -6,7 +6,11 @@ The parent pom for various Jackson components.
 === Releases ===
 ------------------------------------------------------------------------
 
-2.18.3 (not yet released)
+2.18.4 (not yet released)
+
+- Update to latest `oss-parent` (69)
+
+2.18.3 (06-May-2025)
 
 - Update to latest `oss-parent` (68)
 - Switch to publishing via Sonatype Central Portal repo
