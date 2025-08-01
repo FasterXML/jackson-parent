@@ -14,7 +14,7 @@
   <parent>
    <groupId>com.fasterxml</groupId>
     <artifactId>oss-parent</artifactId>
-    <version>69</version>
+    <version>70</version>
   </parent>
 
   <groupId>tools.jackson</groupId>
@@ -79,7 +79,7 @@
     <maven.compiler.source>${javac.src.version}</maven.compiler.source>
     <maven.compiler.target>${javac.target.version}</maven.compiler.target>
 
-    <project.build.outputTimestamp>2025-05-14T01:24:09Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2025-07-18T17:25:21Z</project.build.outputTimestamp>
   </properties>
 
   <!-- Alas, need to include snapshot reference since otherwise can not find
