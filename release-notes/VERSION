@@ -8,7 +8,8 @@ The parent pom for various Jackson components.
 
 2.21 (not yet released)
 
-- No changes since 2.20
+#18: Remove `version.plugin.moditect` override to use default from
+  `oss-parent` (1.3.0.Final)
 
 2.20 (28-Aug-2025)
 

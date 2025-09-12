@@ -55,9 +55,11 @@
     
     <javac.debuglevel>lines,source,vars</javac.debuglevel>
 
-    <!-- 12-Oct-2024, tatu: [jackson-parent#15] Downgrade Moditect plugin for 2.18.1+
+    <!-- 12-Oct-2024, tatu: [jackson-parent#15] Downgrade Moditect plugin for 2.18.1+ -->
+    <!-- 11-Sep-2025, tatu: [jackson-parent#18] Remove override for 2.21, to
+	   use default (1.3.0.Final)
       -->
-    <version.plugin.moditect>1.1.0</version.plugin.moditect>
+    <!-- version.plugin.moditect>1.1.0</version.plugin.moditect -->
 
     <!--
      | For automatically generating PackageVersion.java. Your child pom.xml must define
