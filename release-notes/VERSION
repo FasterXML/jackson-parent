@@ -6,7 +6,11 @@ The parent pom for various Jackson components.
 === Releases ===
 ------------------------------------------------------------------------
 
-2.21 (not yet released)
+2.22 (not yet released)
+
+- Update to oss-parent 76
+
+2.21 (18-Jan2-2026)
 
 #18: Remove `version.plugin.moditect` override to use default from
   `oss-parent` (1.3.0.Final)
