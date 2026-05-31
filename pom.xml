@@ -6,12 +6,10 @@
     <artifactId>oss-parent</artifactId>
     <version>79</version>
   </parent>
-
   <groupId>com.fasterxml.jackson</groupId>
   <artifactId>jackson-parent</artifactId>
   <version>2.22.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-
   <name>Jackson parent poms</name>
   <description>Parent pom for all Jackson components</description>
   <url>http://github.com/FasterXML/</url>
