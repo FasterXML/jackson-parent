@@ -9,7 +9,7 @@
 
   <groupId>com.fasterxml.jackson</groupId>
   <artifactId>jackson-parent</artifactId>
-  <version>2.22</version>
+  <version>2.22.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Jackson parent poms</name>
@@ -39,7 +39,7 @@
     <connection>scm:git:git@github.com:FasterXML/jackson-parent.git</connection>
     <developerConnection>scm:git:git@github.com:FasterXML/jackson-parent.git</developerConnection>
     <url>http://github.com/FasterXML/jackson-parent</url>
-    <tag>jackson-parent-2.22</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <properties>
@@ -69,7 +69,7 @@
     <packageVersion.template.input>${basedir}/src/main/java/${packageVersion.dir}/PackageVersion.java.in</packageVersion.template.input>
     <packageVersion.template.output>${generatedSourcesDir}/${packageVersion.dir}/PackageVersion.java</packageVersion.template.output>
 
-    <project.build.outputTimestamp>2026-05-31T04:33:28Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2026-05-31T04:33:35Z</project.build.outputTimestamp>
   </properties>
 
   <!-- 17-Sep-2021, tatu: Used to have junit prior to Jackson 2.13, removed due to
