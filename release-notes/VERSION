@@ -6,9 +6,9 @@ The parent pom for various Jackson components.
 === Releases ===
 ------------------------------------------------------------------------
 
-2.23 (not yet released)
+2.23 (07-Nov-2026)
 
-- Update to oss-parent 80
+- Update to oss-parent 81
 
 2.22 (31-May-2026)
 
